@@ -1,0 +1,169 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Testing Customer Information",
+        "description": "",
+        "id": "customer-data-validation;testing-customer-information",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2502750174,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User hits API",
+            "match": {
+              "location": "Customer_Step_Defs.user_hits_API()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1766334304,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User verifies response status codes should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 46
+                }
+              ],
+              "location": "Customer_Step_Defs.user_verifies_response_status_codes_should_be(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 100808,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User verifies customer\u0027s id is greater than 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 44
+                }
+              ],
+              "location": "Customer_Step_Defs.user_verifies_customer_s_id_is_greater_than(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 37103,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User verifies customer\u0027s name is less or equal than 10 alpha characters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 52
+                }
+              ],
+              "location": "Customer_Step_Defs.user_verifies_customer_s_name_is_less_or_equal_than_alpha_characters(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27551,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User verifies customer\u0027s last is less or equal than 10 alpha characters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 52
+                }
+              ],
+              "location": "Customer_Step_Defs.user_verifies_customer_s_last_is_less_or_equal_than_alpha_characters(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 32361,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User verifies customer\u0027s age is between 0 and 120",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 40
+                },
+                {
+                  "val": "120",
+                  "offset": 46
+                }
+              ],
+              "location": "Customer_Step_Defs.user_verifies_customer_s_age_is_between_and(Integer,Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 161748,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User verifies customer\u0027s gender is either \"F\" or \"M\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"F\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"M\"",
+                  "offset": 49
+                }
+              ],
+              "location": "Customer_Step_Defs.user_verifies_customer_s_gender_is_either_or(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 847432209,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User verifies response time is less than 500 ms",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 41
+                }
+              ],
+              "location": "Customer_Step_Defs.user_verifies_response_time_is_less_than_ms(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Customer Data Validation",
+    "description": "  Acceptance Criteria  From Requirements\n\n  1.id [int] greater than zero\n  2.name [String] can\u0027t be longer than 10 alpha characters\n  3.last [String] can\u0027t be longer than 10 alpha characters\n  4.age [int] must be integer and 0 \u003e age \u003c 120\n  5.gender [String] must only be F or M\n  6.response time must be less than 500ms",
+    "id": "customer-data-validation",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/API_Automation_features.feature",
+    "tags": []
+  }
+]
