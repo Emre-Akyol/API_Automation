@@ -47,7 +47,8 @@ public class Customer_Step_Defs {
         int actualCustomerNameLength = API_Util.getResponseBody().getName().length();
         int expectedCustomerNameLength = int1.intValue();
 
-        Assert.assertTrue("Customer's name length verification failed", expectedCustomerNameLength > actualCustomerNameLength);
+        Assert.assertTrue("Customer's name length verification failed",
+                expectedCustomerNameLength > actualCustomerNameLength);
 
 
     }
@@ -100,7 +101,8 @@ public class Customer_Step_Defs {
         int actualResponseTime = (int) response.getTimeIn(TimeUnit.MILLISECONDS);
         int expectedResponseTime = int1;
 
-        Assert.assertTrue("Response Time Verification Failed", expectedResponseTime > actualResponseTime);
+        Assert.assertTrue("Response Time Verification Failed",
+                expectedResponseTime > actualResponseTime);
 
 
     }
