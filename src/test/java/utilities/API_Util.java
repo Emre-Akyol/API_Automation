@@ -14,7 +14,6 @@ public class API_Util {
     // from Jackson library object mapper class
     public static void hitGET(String resource) {
 
-
         String uri = Config.getProperty("baseURL") + resource;
         Response response = RestAssured.get(uri);
 
